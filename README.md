@@ -1,2 +1,2 @@
 # otus
-Homework for OTUS
+Homework on OTUS
