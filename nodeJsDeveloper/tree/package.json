@@ -1,0 +1,22 @@
+{
+  "name": "tree",
+  "version": "1.0.0",
+  "description": "Showing the tree",
+  "author": "Kuraev Andrey",
+  "license": "ISC",
+  "bin": {
+    "tree": "bin/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "lint": "npx eslint ."
+  },
+  "dependencies": {
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.31.0"
+  }
+}
