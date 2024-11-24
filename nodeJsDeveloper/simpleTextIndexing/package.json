@@ -1,0 +1,13 @@
+{
+  "name": "simple-text-indexing",
+  "version": "1.0.0",
+  "bin": {
+    "simpleTextIndexing": "bin/index.js"
+  },
+  "type": "module",
+  "author": "Kuraev Andrey",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^12.1.0"
+  }
+}
