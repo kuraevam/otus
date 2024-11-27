@@ -62,13 +62,13 @@ function getStructureJson(json, depth) {
   return structure;
 }
 
-export function showDirectoryFileStructure(folderPath, depth) {
+export function getTreeByDirectory(folderPath, depth) {
   const structure = getStructureDirectory(folderPath, depth);
-  renderStructure(structure);
+  return renderStructure(structure);
 }
 
-export function showJsonStructure(folderPath, depth) {
+export function getTreeByJson(folderPath, depth) {
   const json = getJsonFromFile(folderPath);
   const structure = getStructureJson(json, depth);
-  renderStructure(structure);
+  return renderStructure(structure);
 }

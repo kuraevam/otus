@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getTreeByDirectory it should return the tree 1`] = `
+"tree
+|------file1
+|------file2
+|------folder1
+|   |-----file3
+|   |-----file4
+|   |-----folder2
+|   |  |-----file5
+|   |  |-----file6"
+`;
+
+exports[`getTreeByJson it should return the tree 1`] = `
+"1
+|------2
+|   |-----3
+|   |-----4
+|------5
+|   |-----6
+|   |  |-----7
+|   |  |  |-----8"
+`;
