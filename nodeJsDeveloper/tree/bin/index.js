@@ -2,7 +2,7 @@
 
 import { program } from 'commander';
 import fs from 'fs';
-import { showDirectoryFileStructure, showJsonStructure } from '../src/structure.js';
+import { getTreeByDirectory, getTreeByJson } from '../src/structure.js';
 
 program
   .version('1.0.0')
@@ -40,11 +40,13 @@ program
     }
 
     if (source === 'json') {
-      showJsonStructure(path, depthInt);
+      const tree = getTreeByJson(path, depthInt);
+      console.log(tree);
     }
 
     if (source === 'directory') {
-      showDirectoryFileStructure(path, depthInt);
+      const tree = getTreeByDirectory(path, depthInt);
+      console.log(tree);
     }
   });
 

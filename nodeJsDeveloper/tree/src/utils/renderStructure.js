@@ -1,4 +1,6 @@
 function render(structure, depth = 0) {
+  const rows = [];
+
   let str = structure.name;
 
   if (depth > 0) {
@@ -14,16 +16,20 @@ function render(structure, depth = 0) {
     }${structure.name}`;
   }
 
-  console.log(str);
+  rows.push(str);
 
   if (Array.isArray(structure.items)) {
     depth += 1;
     for (const structureChild of structure.items) {
-      render(structureChild, depth);
+      const rowsChild = render(structureChild, depth);
+      rows.push(...rowsChild);
     }
   }
+
+  return rows;
 }
 
 export default function renderStructure(structure) {
-  render(structure);
+  const rows = render(structure);
+  return rows.join('\n');
 }

@@ -11,3 +11,6 @@ start-json:
 start-directory:
 	tree -s directory -p /Users/andrey/OTUS/Projects/otus/nodeJsDeveloper/tree -d 2
 
+test:
+	npm run test
+
